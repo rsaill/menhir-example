@@ -1,0 +1,9 @@
+(library
+ (name simple_parser)
+ (libraries menhirLib))
+ (menhir
+  (flags --table --explain)
+  (infer false)
+  (modules grammar))
+(ocamllex
+  (modules lexer))

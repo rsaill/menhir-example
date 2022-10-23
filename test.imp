@@ -1,0 +1,12 @@
+fun foo(x,y,z){
+    if(x+y>2){
+        return
+    };
+    x := y;
+    return
+}
+fun bar(){ [
+    var x := 0;
+    foo(true,x,42);
+    return
+}
